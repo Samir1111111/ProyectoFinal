@@ -30,7 +30,7 @@ background-color: antiquewhite;
 /*Estilos del menu*/
 .menu{
     background-color: #FFFBE9;
-    margin: 0px;
+    margin: 0.5rem;
     padding: 0px;
     text-align: center;
 }
@@ -69,37 +69,40 @@ background-color: antiquewhite;
 }
 
 /*Estilos del main*/
-.mainHome{a
-    grid-area: mainHome;a
-    display: none;a
-}a
-a
-/*Estilos del aside*/a
-.asideHome{a
-    display: flex;a
-    justify-content: center;a
-    grid-area: asideHome;a
-}a
-a
-/*Estilos del sectionHome*/a
-.sectionHome{a
-    grid-area: sectionHome;a
-}a
-a
-/*Estilos del subtituloHome*/a
-.subtituloHome{a
-    font-size: 2.3rem;a
-}a
-a
-/*Estilos del parrafoDos*/a
-.parrafoDos{a
-    font-size: 1.2rem;a
+.mainHome{
+    grid-area: mainHome;
+    display: none;
+}
+
+/*Estilos del aside*/
+.asideHome{
+    display: flex;
+    justify-content: center;
+    grid-area: asideHome;
+    margin: 0.5rem;
+}
+
+/*Estilos del sectionHome*/
+.sectionHome{
+    grid-area: sectionHome;
+}
+
+/*Estilos del subtituloHome*/
+.subtituloHome{
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+/*Estilos del parrafoDos*/
+.parrafoDos{
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 /*Estilos del footer*/
 footer{
     grid-area: footer;
-    margin: 1.5rem;
+    margin: 2rem;
 }
 
 footer li a{
