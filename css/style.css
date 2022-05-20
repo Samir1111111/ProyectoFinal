@@ -27,46 +27,6 @@ background-color: antiquewhite;
     text-decoration: underline;
 }
 
-/*Estilos del menu*/
-.menu{
-    background-color: #FFFBE9;
-    margin: 0.5rem;
-    padding: 0px;
-    text-align: center;
-}
-/*Estilos de los li*/
-.menu ul li{
-    list-style-type: none;
-    display: inline-block;
-    color: black;
-    position: relative;
-    margin: 5px;
-    font-size: 1.3rem;
-}
-
-.menu ul li a:hover{
-    color: rgb(226, 198, 198);
-    font-weight: bold;
-}
-
-.menu ul ul{
-    display: none;
-    position: absolute;
-}
-/*Hover*/
-.menu ul li:hover > ul{
-    display: block;
-    background-color: antiquewhite;
-}
-/*Estilos de los a*/
-.menu ul li a{
-    color: rgb(3, 2, 1);
-}
-/*estilos del submenu*/
-.sub-menu{
-    background-color: beige;
-    padding: 10px;
-}
 
 /*Estilos del main*/
 .mainHome{
@@ -105,7 +65,12 @@ footer{
     margin: 2rem;
 }
 
+footer h3{
+    font-size: 1rem;
+}
+
 footer li a{
+    font-size: 1rem;
     list-style-type: none;
     color: black;
     text-decoration: none;

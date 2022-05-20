@@ -4,46 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
      <!--link animate-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--Link css-->
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
-<div class="contenedorHome">
-    <body class="bodyHome">
+<body class="bodyHome">
+    <div class="contenedorHome">
         <header class="headerHome">
-            <h1 class="tituloHome animate__animated animate__backInLeft">
+            <h1 class="tituloHome animate__animated animate__fadeIn">
                 Titulo
             </h1>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="pages/campanias.html">Campañas</a>
-                    </li>
-                    <li>
-                        <a href="pages/productos.html">Productos</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="">Opcion1</a>
-                            </li>
-                            <li>
-                                <a href="">Opcion2</a>
-                            </li>
-                            <li>
-                                <a href="">Opcion3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="pages/locales.html">Locales</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menu de navegacion</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Campañas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Locales</a>
+                  </li>
+		  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Buzos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Camperas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Remeras</a></li>
+                    </ul>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
         <main class="mainHome">
             <p class="parrafoUno">
@@ -70,8 +78,11 @@
                 <a href="www.coderhouse.com">Nuestras Redes</a>
             </li>
             </footer>
-    </body>
-</div>    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+</body>    
 </html>
 
 
