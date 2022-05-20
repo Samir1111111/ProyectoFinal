@@ -20,6 +20,11 @@
 background-color: antiquewhite;   
 }
 
+/*Estilos del header*/
+.headerHome{
+    background-color: blanchedalmond;
+}
+
 /*Estilos del tituloHome*/
 .tituloHome{
     text-align: center;
@@ -27,6 +32,10 @@ background-color: antiquewhite;
     text-decoration: underline;
 }
 
+/*Estilos del menu*/
+.menuHome{
+    background-color: rgb(240, 209, 168);
+}
 
 /*Estilos del main*/
 .mainHome{
