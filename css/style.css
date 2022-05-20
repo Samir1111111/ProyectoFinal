@@ -151,5 +151,13 @@ footer li a{
 /*Estilos de los videos*/
 .videoUno{
     grid-area: videouno;
-    
+    text-align: center;
+}
+
+.videoDos{
+    display: none;
+}
+
+.videoTres{
+    display: none;
 }
