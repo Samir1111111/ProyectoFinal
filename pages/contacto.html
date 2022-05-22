@@ -4,97 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Link css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
 <body class="bodyContacto">
-    <header class="headerContacto">
-        <h1 class="tituloContacto">
-            Titulo
-        </h1>
-        <h2 class="subtituloUno">
-            Subtitulo
-        </h2>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="locales.html">Locales</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="">Opcion1</a>
-                        </li>
-                        <li>
-                            <a href="">Opcion2</a>
-                        </li>
-                        <li>
-                            <a href="">Opcion3</a>
-                        </li>
+    <div class="contenedorContacto">
+        <header class="headerContacto">
+            <h1 class="tituloContacto">
+                Titulo
+            </h1>
+            <h2 class="subtituloContactouno">
+                Subtitulo
+            </h2>
+        </header>
+        
+        <!--menu de navegacion-->
+        <nav class="navbar navbar-expand-lg menuContacto">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menu de navegacion</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contactos
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/locales.html">Locales</a>
+                  </li>
+          <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Buzos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Camperas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Remeras</a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="mainContacto">
-        <form>
-        <fieldset>
-            <legend>
-                Ingresa tus datos
-            </legend>
-            <div>
-                <label for="nombre">
-                    Ingresa tu nombre
-                </label>
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                </ul>
+              </div>
             </div>
-            <div>
-                <label for="email">
-                    Ingresa tu email
-                </label>
-                <input type="email" name="email" placeholder="Ingresa tu email">
-            </div>
-            <div>
-                <label for="pais">
-                    selecciona tu pais
-                </label>
-                <select name="pais" id="">
-                    <option value="Argentina">Argentina</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Peru">Peru</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Uruguay">Uruguay</option>
-                </select>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Resetear">
-            </div>
-        </fieldset>
-        </form>
+          </nav>
 
-    
-        <h2 class="subtituloDos"> 
-            Subtitulo
-        </h2>
-        <p class="parrafoOcho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate ducimus quod? Explicabo cumque nisi autem, distinctio quo facere fugiat iure id saepe dolores fuga ad rem dicta enim fugit?
-        </p>
-    </main>
+        <main class="mainContacto">
+            <form>
+            <fieldset>
+                <legend>
+                    Ingresa tus datos
+                </legend>
+                <div>
+                    <label for="nombre">
+                        Ingresa tu nombre
+                    </label>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div>
+                    <label for="email">
+                        Ingresa tu email
+                    </label>
+                    <input type="email" name="email" placeholder="Ingresa tu email">
+                </div>
+                <div>
+                    <label for="pais">
+                        selecciona tu pais
+                    </label>
+                    <select name="pais" id="">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Uruguay">Uruguay</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </div>
+            </fieldset>
+            </form>
+        </main>
+        
 
-
-    <footer>
-        <h3>Seguinos en nuestras redes</h3>
-        <h4>Todos los derechos reservados</h4>
-    </footer>
+        <section class="sectionContacto">
+            <h2 class="subtituloContactodos"> 
+                Subtitulo
+            </h2>
+            <p class="parrafoOcho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate ducimus quod? Explicabo cumque nisi autem, distinctio quo facere fugiat iure id saepe dolores fuga ad rem dicta enim fugit?
+            </p>
+        </section>
+        
+        
+        <!--Pie de la pagina-->
+        <footer>
+            <h3>Todos los derechos reservados</h3>
+            <li>
+                <a href="https://www.coderhouse.com/" target="_blank">Nuestras Redes</a>
+            </li>
+        </footer>
+    </div>
+    <!--link de javascrip para bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

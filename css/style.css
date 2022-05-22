@@ -8,21 +8,23 @@
 /*Estilos del contenedor*/
 .contenedorHome{
     display: grid;
-    grid-template-areas:"headerHome"
-                        "mainHome"
-                        "asideHome"
-                        "sectionHome"
-                        "footer";
+    grid-template-areas:"headerHome headerHome"
+                        "menuHome menuHome"
+                        "mainHome mainHome"
+                        "asideHome asideHome"
+                        "sectionHome sectionHome"
+                        "footer footer";
 }
 
 /*Estilos del body*/
 .bodyHome{
-background-color: antiquewhite;   
+background-color: #00FFAB;   
 }
 
 /*Estilos del header*/
 .headerHome{
-    background-color: blanchedalmond;
+    background-color: #14C38E;
+    grid-area: headerHome;
 }
 
 /*Estilos del tituloHome*/
@@ -34,7 +36,8 @@ background-color: antiquewhite;
 
 /*Estilos del menu*/
 .menuHome{
-    background-color: rgb(240, 209, 168);
+    background-color: #B8F1B0;
+    grid-area: menuHome;
 }
 
 /*Estilos del main*/
@@ -72,6 +75,8 @@ background-color: antiquewhite;
 footer{
     grid-area: footer;
     margin: 2rem;
+    background-color: white;
+    display: inline-block;
 }
 
 footer h3{
@@ -90,10 +95,10 @@ footer li a{
 /*Estilos del layout*/
 .contenedorCamp{
     display: grid;
-    grid-template-areas: "header header header"
-                         "nav nav nav"
-                         "main main main"
-                         "footer footer footer";
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "main main"
+                         "footer footer";
 }
 
 /*Estilos del bodyCamp*/
@@ -117,6 +122,11 @@ footer li a{
 .parrafoCamp{
     display: 
     none;
+}
+
+/*Estilos del menuCamp*/
+.menuCamp{
+    grid-area: nav;
 }
 
 /*Estilos del mainCamp*/
@@ -169,4 +179,54 @@ footer li a{
 
 .videoTres{
     display: none;
+}
+
+/*Estilos del layout*/
+.contenedorContacto{
+    display: grid;
+    grid-template-areas:"header header header"
+                        "nav nav nav"
+                        "section section section"
+                        "main main main"
+                        "footer footer footer";
+}
+
+/*Estilos del body*/
+.bodyContacto{
+    background-color: #EBD8C3;
+}
+
+/*Estilos del headerContacto*/
+.headerContacto{
+    grid-area: header;
+    background-color: #FFF6EA;
+}
+
+/*Estilos del tituloContacto*/
+.tituloContacto{
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*Estilos del subtituloContactouno*/
+.subtituloContactouno{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+/*Estilos del menuContacto*/
+.menuContacto{
+    grid-area: nav;
+    background-color: #F7E9D7;
+}
+
+/*Estilos del mainContacto*/
+.mainContacto{
+    grid-area: main;
+}
+
+/*Estilos del sectionContacto*/
+.sectionContacto{
+    grid-area: section;
+    margin: 1rem;
 }
