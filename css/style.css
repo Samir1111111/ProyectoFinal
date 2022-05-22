@@ -171,6 +171,11 @@ footer li a{
 .videoUno{
     grid-area: videouno;
     text-align: center;
+	position: relative;
+	padding-bottom: 56.25%; /*panorámico*/
+	padding-top: 25px;
+	height: 0;
+
 }
 
 .videoDos{
