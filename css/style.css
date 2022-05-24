@@ -235,3 +235,62 @@ footer li a{
     grid-area: section;
     margin: 1rem;
 }
+
+
+/*Estilos layout de locales*/
+.contenedorLocales{
+    display: grid;
+    grid-template-areas:"header header"
+                        "nav nav"
+                        "main main"
+                        "section section"
+                        "footer footer";
+}
+
+/*Estilos del body*/
+.bodyLocales{
+    background-color: #E4AEC5;
+}
+
+/*Estilos del menu*/
+.menuLocales{
+    grid-area: nav;
+}
+
+/*Estilos del header*/
+.headerLocales{
+    grid-area: header;
+    background-color: #FAD9E6;
+}
+/*Estilos del tituloLocales*/
+.tituloLocales{
+    text-align: center;
+    font-size: 4rem;
+}
+/*Estilos del parrafoCuatro*/
+.parrafoCuatro{
+    display: none;
+}
+
+/*Estilos del main*/
+.mainLocales{
+    grid-area: main;
+}
+
+/*Estilos del section*/
+.sectionLocales{
+    grid-area: section;
+}
+
+/*Estilos del parrafoSeis*/
+.parrafoSeis{
+    display: none;
+}
+
+/*Layout de productos*/
+.contenedorProductos{
+    display: grid;
+    grid-template-areas:"header header"
+                        "nav nav"
+                        "";
+}
