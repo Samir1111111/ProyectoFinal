@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Georgia, 'Times New Roman', Times, serif,sans-serif, serif, cursive, monospace;
 }
 
 /*Estilos del contenedor*/
@@ -38,11 +39,16 @@ background-color: #00FFAB;
 .menuHome{
     background-color: #B8F1B0;
     grid-area: menuHome;
+    
 }
 
 /*Estilos del main*/
 .mainHome{
     grid-area: mainHome;
+}
+
+/*Estilos del parrafoUno*/
+.parrafoUno{
     display: none;
 }
 
@@ -98,6 +104,7 @@ footer li a{
     grid-template-areas: "header header"
                          "nav nav"
                          "main main"
+                         "section section"
                          "footer footer";
 }
 
@@ -167,6 +174,12 @@ footer li a{
     text-align: center;
     grid-area: parrafo;
 }
+
+/*Estilos del sectionCamp*/
+.sectionCamp{
+    grid-area: section;
+}
+
 /*Estilos de los videos*/
 .videoUno{
     position: relative;
@@ -248,24 +261,25 @@ footer li a{
     grid-template-areas:"header header"
                         "nav nav"
                         "main main"
-                        "section section"
+                        "section aside"
                         "footer footer";
 }
 
 /*Estilos del body*/
 .bodyLocales{
-    background-color: #E4AEC5;
+    background-color: #f0c2d6;
 }
 
 /*Estilos del menu*/
 .menuLocales{
+    background-color: #d894b0;
     grid-area: nav;
 }
 
 /*Estilos del header*/
 .headerLocales{
     grid-area: header;
-    background-color: #FAD9E6;
+    background-color: #e2a4bd;
 }
 /*Estilos del tituloLocales*/
 .tituloLocales{
@@ -287,7 +301,12 @@ footer li a{
     grid-area: section;
 }
 
-/*Estilos del parrafoSeis*/
+/*Estilos del asideLocales*/
+
+.asideLocales{
+    grid-area: aside;
+}
+
 .parrafoSeis{
     display: none;
 }
@@ -321,11 +340,6 @@ footer li a{
     font-size: 4rem;
 }
 
-/*Estilos del parrafoTres*/
-.parrafoTres{
-    display: none;
-}
-
 /*Estilos del menuProductos*/
 .menuProductos{
     grid-area: nav;
@@ -351,4 +365,155 @@ footer li a{
     grid-area: section;
     display: flex;
     flex-wrap: nowrap;
+}
+
+@media (min-width: 640px){
+    /*Considero que las media queries de este breakpoint estan bien asi*/
+}
+
+@media (min-width: 1023px){
+    /*Estilos del contenedorHome*/
+    .contenedorHome{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-areas:"headerHome headerHome headerHome headerHome"
+                            "menuHome menuHome menuHome menuHome"
+                            "mainHome mainHome asideHome asideHome"
+                            "sectionHome sectionHome sectionHome sectionHome"
+                            "footer footer footer footer";
+    }
+    /*Estilos del parrafoUno*/
+    .parrafoUno{
+        display: block;
+        margin-top: 4rem;
+        font-size: 1.2rem;
+    }
+    /*Estilos del menuHome*/
+    .menuHome{
+        font-size: 1.1rem;
+    }
+    /*Estilos de imgHome*/
+    .imgHome{
+        width: 100%;
+        height: 100%;
+    }
+    /*Estilos de campanias*/
+    /*Estilos del layout*/
+    .contenedorCamp{
+        grid-template-areas: "header header header header"
+                            "nav nav nav nav"
+                            "main main main main"
+                            "section section section section"
+                            "footer footer footer footer";
+    }
+ /*Estilos del mainCamp*/
+.mainCamp{
+    grid-area: main;
+    background-color: #CCF3EE;
+    /*Estructura interna*/
+    display: grid;
+    grid-template-areas: "subtitulo subtitulo subtitulo"
+                         "parrafo parrafo parrafo"
+                         "campuno campdos camptres";
+    }
+    /*Estilos del campUno*/
+    .campUno{
+        grid-area: campuno;
+        display: flex;
+
+    }
+    /*Estilos del campTres*/
+    .campTres{
+        display: inline-block;
+        grid-area: camptres;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    /*Estilos del campDos*/
+    .campDos{
+        display: inline-block;
+        grid-area: campdos;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Estilos de los videos*/
+    .videoUno{
+        display: inline-block;
+        width: 560px;
+        height: 315px;
+        display: flex;
+    }
+
+    .videoUno iframe{
+        width: 560px;
+        height: 315px;
+        margin-bottom: 0px;
+        overflow: auto;
+    }
+
+    .videoDos{
+        display: inline-block;
+        width: 560px;
+        height: 315px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .videoTres{
+        display: inline-block;
+        width: 560px;
+        height: 315px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .sectionCamp{
+        display: flex;
+        justify-content: space-around;
+        background-color: #CCF3EE;
+        height: auto;
+        width: auto;
+    }
+
+    /*Estilos de locales*/
+    /*Estilos layout de locales*/
+    .contenedorLocales{
+        display: grid;
+        grid-template-areas:"header header header header"
+                            "nav nav nav nav"
+                            "main main main main"
+                            "section section aside aside"
+                            "footer footer footer footer";
+    }
+
+    .parrafoSeis{
+        display: inline;
+        text-align: center;
+    }
+
+    /*Estilos de productos*/
+    .sectionProductos{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1280px){
+    /*Estilos de campañas*/
+    .parrafoCamp{
+        display: inline;
+    }
+    /*Estilos de locales*/
+    .parrafoCuatro{
+        display: flex;
+        justify-content: center;
+    }
+    /*Estilos de productos*/
+    .sectionProductos{
+        justify-content: space-around;
+    }
 }
