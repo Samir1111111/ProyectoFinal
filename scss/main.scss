@@ -217,7 +217,7 @@ footer{
     .tituloContacto{
         /*Estilos del tituloContacto*/
         text-align: center;
-        font-size: 4rem;
+        font-size: $medida-titulos;
     }
     .subtituloContactouno{
         /*Estilos del subtituloContactouno*/
@@ -266,7 +266,7 @@ footer{
     .tituloLocales{
         /*Estilos del tituloLocales*/
         text-align: center;
-        font-size: 4rem;
+        font-size: $medida-titulos;
     }
     .parrafoCuatro{
         /*Estilos del parrafoCuatro*/
@@ -324,7 +324,7 @@ footer{
     .tituloProductos{
         /*Estilos del tituloProductos*/
         text-align: center;
-        font-size: 4rem;
+        font-size: $medida-titulos;
     }
 }
 
@@ -373,7 +373,7 @@ footer{
     /*Estilos del parrafoUno*/
     .parrafoUno{
         display: block;
-        margin-top: 4rem;
+        margin-top: $medida-titulos;
         font-size: 1.2rem;
     }
     /*Estilos del menuHome*/
