@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="CAMPAÑAS, TIENDAONLINE, RECICLAJE, TAPITAS,  COMEDORES, GIFTCARD">
+    <meta name="description" content="Enterate de nuestras campañas, donde ayudamos a los mas necesitados y tambien damos recompenzas como giftcards de compra">
     <!--Link de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--link animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--Link css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Campañas</title>
 </head>
-<body class="bodyCamp">
+<body class="bodyCamp animate__animated animate__fadeIn">
     <div class="contenedorCamp">
         <header class="headerCamp">
             <h1 class="tituloCamp">
-                Titulo
+                TiendaOnline
             </h1>
-            <p class="parrafoCamp">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime inventore quod nesciunt ex? Officiis inventore eius aliquid adipisci molestias corporis quis repellendus. Nam nostrum quae labore quidem similique inventore?
-            </p>
         </header>
                 <!--menu de navegacion-->
                 <nav class="navbar navbar-expand-lg menuCamp">
@@ -58,31 +59,38 @@
 
             <main class="mainCamp">
                <h2 class="subtituloCamp">
-                   Destacados
+                   Conoce nuestras campañas
                </h2>
-               <h3 class="campUno">
-                   Campaña 1
-               </h3>
-               <h3 class="campDos">
-                   Campaña 2
-               </h3>
-               <h3 class="campTres">
-                   Campaña 3
-               </h3>
                <p class="parrafoCampdos">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil illo voluptates molestias ipsam. Modi nostrum sunt optio quae, minus voluptatem inventore, labore quaerat ratione perferendis expedita aliquid quasi asperiores?
+                  Estas son las campañas que estan actualmente, van cambiendo a medida que se agregen o terminen las mismas
                </p>
             </main>
             <section class="sectionCamp">
-             <div class="videoUno">
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/UOiuw6YmfOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
-             <div class="videoDos">
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/UOiuw6YmfOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
-             <div class="videoTres">
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/UOiuw6YmfOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
+
+              <div class="card campanhaUno" style="width: 18rem;">
+                <img src="/img/campañacomedor.jpg" class="card-img-top imagenCarduno" alt="Imagen de remera manga corta nike basica">
+                <div class="card-body">
+                  <p class="card-text">Por cada campera que compres de la nueva temporada vas a estar contribuyendo con un comedor de zona sur</p>
+                  <a href="#" class="card-link">Campaña de Comedor</a>
+                </div>
+              </div>
+
+              <div class="card campanhaDos" style="width: 18rem;">
+                <img src="/img/campañareciclaje.jpg" class="card-img-top imagenCarddos" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Por cada prenda que compres desde el 17 de junio hasta el 24 de junio el 20% del dinero sera donado a una campaña de reciclaje</p>
+                  <a href="#" class="card-link">Campaña de Reciclaje</a>
+                </div>
+              </div>
+
+              <div class="card campanhaTres" style="width: 18rem;">
+                <img src="/img/campañatapitas.jpg" class="card-img-top" alt="Imagen de remera manga corta nike micky mouse imagenCardtres">
+                <div class="card-body">
+                  <p class="card-text">Si vivis cerca de nuestro local fisico podes traer todas las tapitas que tengas y podes canjearlas por giftcard.</p>
+                  <a href="#" class="card-link">Campaña de Tapitas</a>
+                </div>
+              </div>
+
             </section>
          
           <!--Pie de la pagina-->
