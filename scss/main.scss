@@ -13,6 +13,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-weight: 600;
     box-sizing: border-box;
     font-family: Arial, Georgia, 'Times New Roman', Times, serif,sans-serif, serif, cursive, monospace;
 }
@@ -211,6 +212,9 @@ footer{
 /*Estilos del mainContacto*/
 .mainContacto{
     grid-area: main;
+    .formularioContacto{
+        padding: 1.2rem;
+    }
 }
 
 /*Estilos del sectionContacto*/
@@ -254,11 +258,13 @@ footer{
 
 /*Estilos del main*/
 .mainLocales{
+    padding: 2rem;
     grid-area: main;
 }
 
 /*Estilos del section*/
 .sectionLocales{
+    padding: 2rem;
     grid-area: section;
 }
 
