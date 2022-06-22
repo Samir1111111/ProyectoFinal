@@ -37,6 +37,7 @@
 
 /*Estilos del header*/
 .headerHome{
+    padding: $margenes-laterales;
     background-color: #14C38E;
     grid-area: headerHome;
     /*Estilos del tituloHome*/
@@ -62,6 +63,8 @@ nav .nav-link a:hover{
 
 /*Estilos del main*/
 .mainHome{
+    padding: $margenes-laterales;
+    margin: 2rem;
     grid-area: mainHome;
     /*Estilos del parrafoUno*/
     .parrafoUno{
@@ -71,6 +74,7 @@ nav .nav-link a:hover{
 
 /*Estilos del aside*/
 .asideHome{
+    padding: $margenes-laterales;
     display: flex;
     justify-content: center;
     grid-area: asideHome;
@@ -79,6 +83,7 @@ nav .nav-link a:hover{
 
 /*Estilos del sectionHome*/
 .sectionHome{
+    padding: $margenes-laterales;
     grid-area: sectionHome;
     .subtituloHome{
     /*Estilos del subtituloHome*/
@@ -127,6 +132,7 @@ footer{
 
 /*Estilos del header*/
 .headerCamp{
+    padding: $margenes-laterales;
     grid-area: header;
     @extend %colorheader;
     .tituloCamp{
@@ -138,12 +144,14 @@ footer{
 
 /*Estilos del menuCamp*/
 .menuCamp{
+    padding: $margenes-laterales;
     grid-area: nav;
     @extend %colormenu;
 }
 
 /*Estilos del mainCamp*/
 .mainCamp{
+    padding: $margenes-laterales;
     grid-area: main;
     @extend %colorbody;
     /*Estructura interna*/
@@ -166,9 +174,19 @@ footer{
 
 /*Estilos del sectionCamp*/
 .sectionCamp{
+    padding: $margenes-laterales;
     grid-area: section;
     display: flex;
     flex-wrap: nowrap;
+    .imagenCarduno{
+        height: 17rem;
+    }
+    .imagenCarddos{
+        height: 17rem;
+    }
+    .imagenCardtres{
+        height: 17rem;
+    }
 }
 
 /*Estilos de Contacto*/
@@ -189,6 +207,7 @@ footer{
 
 /*Estilos del headerContacto*/
 .headerContacto{
+    padding: $margenes-laterales;
     grid-area: header;
     @extend %colorheader;
     .tituloContacto{
@@ -205,12 +224,14 @@ footer{
 
 /*Estilos del menuContacto*/
 .menuContacto{
+    padding: $margenes-laterales;
     grid-area: nav;
     @extend %colormenu;
 }
 
 /*Estilos del mainContacto*/
 .mainContacto{
+    padding: $margenes-laterales;
     grid-area: main;
     .formularioContacto{
         padding: 1.2rem;
@@ -219,6 +240,7 @@ footer{
 
 /*Estilos del sectionContacto*/
 .sectionContacto{
+    padding: $margenes-laterales;
     grid-area: section;
     margin: 1rem;
 }
@@ -241,6 +263,7 @@ footer{
 
 /*Estilos del header*/
 .headerLocales{
+    padding: $margenes-laterales;
     grid-area: header;
     @extend %colorheader;
     .tituloLocales{
@@ -252,24 +275,26 @@ footer{
 
 /*Estilos del menu*/
 .menuLocales{
+    padding: $margenes-laterales;
     @extend %colormenu;
     grid-area: nav;
 }
 
 /*Estilos del main*/
 .mainLocales{
-    padding: 2rem;
+    padding: $margenes-laterales;
     grid-area: main;
 }
 
 /*Estilos del section*/
 .sectionLocales{
-    padding: 2rem;
+    padding: $margenes-laterales;
     grid-area: section;
 }
 
 /*Estilos del asideLocales*/
 .asideLocales{
+    padding: $margenes-laterales;
     grid-area: aside;
     .parrafoSeis{
         /*Estilos del parrafoSeis*/
@@ -285,7 +310,6 @@ footer{
 
 /*Layout de productos*/
 .contenedorProductos{
-    grid-template-columns: 2fr 2fr;
     display: grid;
     grid-template-areas:"header header"
                         "nav nav"
@@ -297,6 +321,7 @@ footer{
 
 /*Estilos del header*/
 .headerProductos{
+    padding: $margenes-laterales;
     grid-area: header;
     @extend %colorheader;
     .tituloProductos{
@@ -308,12 +333,14 @@ footer{
 
 /*Estilos del menuProductos*/
 .menuProductos{
+    padding: $margenes-laterales;
     @extend %colormenu;
     grid-area: nav;
 }
 
 /*Estilos del main*/
 .mainProductos{
+    padding: $margenes-laterales;
     grid-area: main;
     .subtituloProductos{
         /*Estilos del subtituloProductos*/
@@ -323,6 +350,7 @@ footer{
 
 /*Estilos del asideProductos*/
 .asideProductos{
+    padding: $margenes-laterales;
     grid-area: aside;
     text-align: center;
 }
@@ -332,6 +360,7 @@ footer{
     grid-area: section;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     .cardUno{
         @include medidas(31.25rem, 31.25rem)
     }
@@ -408,12 +437,6 @@ footer{
                             "main main main main"
                             "section section aside aside"
                             "footer footer footer footer";
-    }
-
-    /*Estilos de productos*/
-    .sectionProductos{
-        display: flex;
-        justify-content: space-between;
     }
 }
 

@@ -30,6 +30,7 @@ footer, .headerCamp, .headerContacto, .headerLocales, .headerProductos {
 
 /*Estilos del header*/
 .headerHome {
+  padding: 1.5rem;
   background-color: #14C38E;
   grid-area: headerHome;
   /*Estilos del tituloHome*/ }
@@ -51,6 +52,8 @@ nav .nav-link a:hover {
 
 /*Estilos del main*/
 .mainHome {
+  padding: 1.5rem;
+  margin: 2rem;
   grid-area: mainHome;
   /*Estilos del parrafoUno*/ }
   .mainHome .parrafoUno {
@@ -58,6 +61,7 @@ nav .nav-link a:hover {
 
 /*Estilos del aside*/
 .asideHome {
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   grid-area: asideHome;
@@ -65,6 +69,7 @@ nav .nav-link a:hover {
 
 /*Estilos del sectionHome*/
 .sectionHome {
+  padding: 1.5rem;
   grid-area: sectionHome; }
   .sectionHome .subtituloHome {
     /*Estilos del subtituloHome*/
@@ -97,6 +102,7 @@ footer {
 
 /*Estilos del header*/
 .headerCamp {
+  padding: 1.5rem;
   grid-area: header; }
   .headerCamp .tituloCamp {
     /*Ëstilos del tituloCamp*/
@@ -105,10 +111,12 @@ footer {
 
 /*Estilos del menuCamp*/
 .menuCamp {
+  padding: 1.5rem;
   grid-area: nav; }
 
 /*Estilos del mainCamp*/
 .mainCamp {
+  padding: 1.5rem;
   grid-area: main;
   /*Estructura interna*/
   display: grid;
@@ -125,9 +133,16 @@ footer {
 
 /*Estilos del sectionCamp*/
 .sectionCamp {
+  padding: 1.5rem;
   grid-area: section;
   display: flex;
   flex-wrap: nowrap; }
+  .sectionCamp .imagenCarduno {
+    height: 17rem; }
+  .sectionCamp .imagenCarddos {
+    height: 17rem; }
+  .sectionCamp .imagenCardtres {
+    height: 17rem; }
 
 /*Estilos de Contacto*/
 /*Estilos del body*/
@@ -138,6 +153,7 @@ footer {
 
 /*Estilos del headerContacto*/
 .headerContacto {
+  padding: 1.5rem;
   grid-area: header; }
   .headerContacto .tituloContacto {
     /*Estilos del tituloContacto*/
@@ -150,16 +166,19 @@ footer {
 
 /*Estilos del menuContacto*/
 .menuContacto {
+  padding: 1.5rem;
   grid-area: nav; }
 
 /*Estilos del mainContacto*/
 .mainContacto {
+  padding: 1.5rem;
   grid-area: main; }
   .mainContacto .formularioContacto {
     padding: 1.2rem; }
 
 /*Estilos del sectionContacto*/
 .sectionContacto {
+  padding: 1.5rem;
   grid-area: section;
   margin: 1rem; }
 
@@ -172,6 +191,7 @@ footer {
 
 /*Estilos del header*/
 .headerLocales {
+  padding: 1.5rem;
   grid-area: header; }
   .headerLocales .tituloLocales {
     /*Estilos del tituloLocales*/
@@ -180,20 +200,22 @@ footer {
 
 /*Estilos del menu*/
 .menuLocales {
+  padding: 1.5rem;
   grid-area: nav; }
 
 /*Estilos del main*/
 .mainLocales {
-  padding: 2rem;
+  padding: 1.5rem;
   grid-area: main; }
 
 /*Estilos del section*/
 .sectionLocales {
-  padding: 2rem;
+  padding: 1.5rem;
   grid-area: section; }
 
 /*Estilos del asideLocales*/
 .asideLocales {
+  padding: 1.5rem;
   grid-area: aside; }
   .asideLocales .parrafoSeis {
     /*Estilos del parrafoSeis*/
@@ -203,12 +225,12 @@ footer {
 /*Estilos del body*/
 /*Layout de productos*/
 .contenedorProductos {
-  grid-template-columns: 2fr 2fr;
   display: grid;
   grid-template-areas: "header header" "nav nav" "main main" "aside aside" "section section" "footer footer"; }
 
 /*Estilos del header*/
 .headerProductos {
+  padding: 1.5rem;
   grid-area: header; }
   .headerProductos .tituloProductos {
     /*Estilos del tituloProductos*/
@@ -217,10 +239,12 @@ footer {
 
 /*Estilos del menuProductos*/
 .menuProductos {
+  padding: 1.5rem;
   grid-area: nav; }
 
 /*Estilos del main*/
 .mainProductos {
+  padding: 1.5rem;
   grid-area: main; }
   .mainProductos .subtituloProductos {
     /*Estilos del subtituloProductos*/
@@ -228,6 +252,7 @@ footer {
 
 /*Estilos del asideProductos*/
 .asideProductos {
+  padding: 1.5rem;
   grid-area: aside;
   text-align: center; }
 
@@ -235,7 +260,8 @@ footer {
 .sectionProductos {
   grid-area: section;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .sectionProductos .cardUno {
     width: 31.25rem;
     height: 31.25rem; }
@@ -288,11 +314,7 @@ footer {
   /*Estilos layout de locales*/
   .contenedorLocales {
     display: grid;
-    grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "section section aside aside" "footer footer footer footer"; }
-  /*Estilos de productos*/
-  .sectionProductos {
-    display: flex;
-    justify-content: space-between; } }
+    grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "section section aside aside" "footer footer footer footer"; } }
 
 @media (min-width: 1280px) {
   /*Estilos de productos*/
