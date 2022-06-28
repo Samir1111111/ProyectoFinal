@@ -23,8 +23,6 @@ footer, .headerCamp, .headerContacto, .headerLocales, .headerProductos {
 
 /*Estilos del contenedor*/
 .contenedorHome {
-  min-height: 100%;
-  margin-bottom: -8em;
   display: grid;
   grid-template-areas: "headerHome headerHome" "menuHome menuHome" "mainHome mainHome" "asideHome asideHome" "sectionHome sectionHome" "footer footer"; }
 

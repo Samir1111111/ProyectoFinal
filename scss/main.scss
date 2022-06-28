@@ -24,8 +24,6 @@
     }
 /*Estilos del contenedor*/
 .contenedorHome{
-    min-height: 100%;
-    margin-bottom: -8em;
     display: grid;
     grid-template-areas:"headerHome headerHome"
                         "menuHome menuHome"
@@ -79,6 +77,9 @@ nav .nav-link a:hover{
     justify-content: center;
     grid-area: asideHome;
     margin: 0.5rem;
+    .imgHome{
+        
+    }
 }
 
 /*Estilos del sectionHome*/
