@@ -78,7 +78,7 @@ nav .nav-link a:hover{
     grid-area: asideHome;
     margin: 0.5rem;
     .imgHome{
-        
+
     }
 }
 
@@ -123,6 +123,7 @@ footer{
 
 /*Estilos del layout*/
 .contenedorCamp{
+    width: 100%;
     display: grid;
     grid-template-areas: "header header"
                          "nav nav"
@@ -178,7 +179,22 @@ footer{
     padding: $margenes-laterales;
     grid-area: section;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    .campanhaUno{
+        width: 26rem;
+        height: 30rem;
+        margin-bottom: 2rem;
+    }
+    .campanhaDos{
+        width: 26rem;
+        height: 30rem;
+        margin-bottom: 2rem;
+    }
+    .campanhaTres{
+        width: 26rem;
+        height: 30rem;
+    }
     .imagenCarduno{
         height: 17rem;
     }
@@ -369,7 +385,7 @@ footer{
         @include medidas(31.25rem, 31.25rem)
     }
     .cardTres{
-        @include medidas(31.25rem, 31.25rem)
+        @include medidas(29.25rem, 29.25rem)
     }
 }
 
@@ -407,11 +423,11 @@ footer{
     /*Estilos de campanias*/
     /*Estilos del layout*/
     .contenedorCamp{
-        grid-template-areas: "header header header header"
-                            "nav nav nav nav"
-                            "main main main main"
-                            "section section section section"
-                            "footer footer footer footer";
+        grid-template-areas: "header header header"
+                            "nav nav nav"
+                            "main main main"
+                            "section section section"
+                            "footer footer footer";
     }
  /*Estilos del mainCamp*/
     .mainCamp{

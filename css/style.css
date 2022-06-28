@@ -95,6 +95,7 @@ footer {
 /*Estilos del bodyCamp*/
 /*Estilos del layout*/
 .contenedorCamp {
+  width: 100%;
   display: grid;
   grid-template-areas: "header header" "nav nav" "main main" "section section" "footer footer"; }
 
@@ -134,7 +135,19 @@ footer {
   padding: 1.5rem;
   grid-area: section;
   display: flex;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
+  .sectionCamp .campanhaUno {
+    width: 26rem;
+    height: 30rem;
+    margin-bottom: 2rem; }
+  .sectionCamp .campanhaDos {
+    width: 26rem;
+    height: 30rem;
+    margin-bottom: 2rem; }
+  .sectionCamp .campanhaTres {
+    width: 26rem;
+    height: 30rem; }
   .sectionCamp .imagenCarduno {
     height: 17rem; }
   .sectionCamp .imagenCarddos {
@@ -267,8 +280,8 @@ footer {
     width: 31.25rem;
     height: 31.25rem; }
   .sectionProductos .cardTres {
-    width: 31.25rem;
-    height: 31.25rem; }
+    width: 29.25rem;
+    height: 29.25rem; }
 
 @media (min-width: 640px) {
   /*Considero que las media queries de este breakpoint estan bien asi*/ }
@@ -296,7 +309,7 @@ footer {
   /*Estilos de campanias*/
   /*Estilos del layout*/
   .contenedorCamp {
-    grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "section section section section" "footer footer footer footer"; }
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "section section section" "footer footer footer"; }
   /*Estilos del mainCamp*/
   .mainCamp {
     grid-area: main;
