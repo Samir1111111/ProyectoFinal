@@ -123,7 +123,6 @@ footer{
 
 /*Estilos del layout*/
 .contenedorCamp{
-    width: 100%;
     display: grid;
     grid-template-areas: "header header"
                          "nav nav"
@@ -176,24 +175,24 @@ footer{
 
 /*Estilos del sectionCamp*/
 .sectionCamp{
-    padding: $margenes-laterales;
     grid-area: section;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     .campanhaUno{
-        width: 26rem;
+        width: 480px;
         height: 30rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .campanhaDos{
-        width: 26rem;
+        width: 480px;
         height: 30rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .campanhaTres{
-        width: 26rem;
+        width: 480px;
         height: 30rem;
+        margin-bottom: 1rem;
     }
     .imagenCarduno{
         height: 17rem;
@@ -389,8 +388,11 @@ footer{
     }
 }
 
-@media (min-width: 640px){
-    /*Considero que las media queries de este breakpoint estan bien asi*/
+@media (min-width: 640){
+    /*Estilos de card de campanias*/
+    *{
+        background-color: red;
+    }
 }
 
 @media (min-width: 1023px){

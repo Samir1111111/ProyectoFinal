@@ -95,7 +95,6 @@ footer {
 /*Estilos del bodyCamp*/
 /*Estilos del layout*/
 .contenedorCamp {
-  width: 100%;
   display: grid;
   grid-template-areas: "header header" "nav nav" "main main" "section section" "footer footer"; }
 
@@ -132,22 +131,22 @@ footer {
 
 /*Estilos del sectionCamp*/
 .sectionCamp {
-  padding: 1.5rem;
   grid-area: section;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
   .sectionCamp .campanhaUno {
-    width: 26rem;
+    width: 480px;
     height: 30rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .sectionCamp .campanhaDos {
-    width: 26rem;
+    width: 480px;
     height: 30rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .sectionCamp .campanhaTres {
-    width: 26rem;
-    height: 30rem; }
+    width: 480px;
+    height: 30rem;
+    margin-bottom: 1rem; }
   .sectionCamp .imagenCarduno {
     height: 17rem; }
   .sectionCamp .imagenCarddos {
@@ -283,8 +282,10 @@ footer {
     width: 29.25rem;
     height: 29.25rem; }
 
-@media (min-width: 640px) {
-  /*Considero que las media queries de este breakpoint estan bien asi*/ }
+@media (min-width: 640) {
+  /*Estilos de card de campanias*/
+  * {
+    background-color: red; } }
 
 @media (min-width: 1023px) {
   /*Estilos del contenedorHome*/
