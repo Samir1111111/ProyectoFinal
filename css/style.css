@@ -273,19 +273,26 @@ footer {
   flex-wrap: wrap;
   justify-content: center; }
   .sectionProductos .cardUno {
-    width: 31.25rem;
-    height: 31.25rem; }
+    width: 20rem;
+    height: 30rem;
+    margin: 1rem; }
   .sectionProductos .cardDos {
-    width: 31.25rem;
-    height: 31.25rem; }
+    width: 20rem;
+    height: 30rem;
+    margin: 1rem; }
   .sectionProductos .cardTres {
-    width: 29.25rem;
-    height: 29.25rem; }
-
-@media (min-width: 640) {
-  /*Estilos de card de campanias*/
-  * {
-    background-color: red; } }
+    width: 20rem;
+    height: 30rem;
+    margin: 1rem; }
+  .sectionProductos .imagenCardcuatro {
+    width: 20rem;
+    height: 20rem; }
+  .sectionProductos .imagenCardcinco {
+    width: 20rem;
+    height: 20rem; }
+  .sectionProductos .imagenCardseis {
+    width: 20rem;
+    height: 20rem; }
 
 @media (min-width: 1023px) {
   /*Estilos del contenedorHome*/
